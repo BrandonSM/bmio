@@ -51,3 +51,18 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   border-top: 0;
   border-bottom: 0;
 }
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
